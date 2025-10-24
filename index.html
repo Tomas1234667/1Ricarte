@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeLib - Tu Biblioteca de Programacion</title>
+    <link rel="stylesheet" href="Biblio.css">
+    <style>
+        body {
+            background-color: #1a1a1a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="navbar-wrapper">
+                <div class="navbar-left">
+                    <a href="index.html" class="logo">
+                        <span class="logo-code">CODE</span>
+                        <br>
+                        <span class="logo-lib">LIB</span>
+                    </a>
+                </div>
+                <nav class="navbar-center">
+                    <ul class="horizontal-menu">
+                        <li><a href="index.html" class="nav-item active">💡 Cursos</a></li>
+                        <li><a href="lenguajes.html" class="nav-item">💻 Lenguajes</a></li>
+                        <li><a href="libros.html" class="nav-item">📚 Libros</a></li>
+                        <li><a href="info.html" class="nav-item">ℹ️ Informacion</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-contenido">
+                <form action="#" method="get" class="buscador-form">
+                    <input type="text" id="campoBusqueda" placeholder="¿Que quieres aprender hoy?" required>
+                    <button type="submit" class="btn-buscar">Buscar</button>
+                </form>
+            </div>
+
+        </header>
+
+        <nav class="navbar">
+            <div class="nav-section">
+                <h3 class="nav-title">Categorias Principales</h3>
+                <ul class="vertical-menu">
+                    <li><a href="index.html" class="nav-link active">Todos los Cursos</a></li>
+                    <li><a href="index.html#desarrollo-web" class="nav-link">C#</a></li>
+                    <li><a href="index.html#ciencia-datos" class="nav-link">Python</a></li>
+                    <li><a href="index.html#desarrollo-movil" class="nav-link">C++</a></li>
+                </ul>
+            </div>
+            <div class="nav-section">
+                <h3 class="nav-title">Informacion</h3>
+                <ul class="vertical-menu">
+                    <li><a href="info.html#acerca" class="nav-link">Acerca de CodeLib</a></li>
+                    <li><a href="info.html#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="main">
+            <h1 class="main-title">Cursos de Programacion Disponibles</h1>
+
+            <div class="carousel-container">
+                <img id="course-image" src="7.jpg" alt="Imagen de Curso" class="carousel-image">
+            </div>
+            <p class="section-description">Explore nuestros cursos de programacion mas populares. Haz clic en cualquiera para ver los detalles, horarios y costes.</p>
+
+            <div class="course-list">
+                <article class="course-card">
+                    <h2 class="course-title">Master en C# con .NET 💻</h2>
+                    <p class="course-info">Aprende el lenguaje de Microsoft para crear aplicaciones web, de escritorio y videojuegos.</p>
+                    <p class="course-price">Costo: $59.99 USD</p>
+                    <a href="#" class="btn-course-details">Ver Detalles y Horarios</a>
+                </article>
+                <article class="course-card">
+                    <h2 class="course-title">Python para Data Science 📊</h2>
+                    <p class="course-info">Curso enfocado en el analisis de datos, machine learning y automatizacion con librerias clave.</p>
+                    <p class="course-price">Costo: $79.99 USD</p>
+                    <a href="#" class="btn-course-details">Ver Detalles y Horarios</a>
+                </article>
+                <article class="course-card">
+                    <h2 class="course-title">Introduccion a C++ 🚀</h2>
+                    <p class="course-info">Domina los fundamentos de C++ para desarrollo de sistemas de alto rendimiento y videojuegos.</p>
+                    <p class="course-price">Costo: $49.99 USD</p>
+                    <a href="#" class="btn-course-details">Ver Detalles y Horarios</a>
+                </article>
+                <article class="course-card">
+                    <h2 class="course-title">Desarrollo Web Frontend</h2>
+                    <p class="course-info">HTML, CSS, y JavaScript de la mano para crear interfaces de usuario atractivas y funcionales.</p>
+                    <p class="course-price">Costo: $69.99 USD</p>
+                    <a href="#" class="btn-course-details">Ver Detalles y Horarios</a>
+                </article>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <h3 class="sidebar-title">Novedades y Ofertas</h3>
+            <div class="sidebar-item">
+                <p><strong>¡Nuevo Curso!</strong> 💻 Curso de Ciberseguridad Ofensiva. ¡20% de descuento por lanzamiento!</p>
+                <a href="cursos.html?id=ciberseguridad" class="sidebar-link">Mas informacion</a>
+            </div>
+            <div class="sidebar-item">
+                <p><strong>Libro del Mes:</strong> "Diseño de Algoritmos Eficientes". ¡Descarga gratuita!</p>
+                <a href="libros.html#gratis" class="sidebar-link">Descargar ahora</a>
+            </div>
+            <div class="sidebar-item">
+                <p>¿Necesitas ayuda? 💡 Consulta nuestra seccion de <a href="info.html#faq" class="sidebar-link">Preguntas Frecuentes</a>.</p>
+            </div>
+        </aside>
+
+        <footer class="footer">
+            <p>&copy; 2025 CodeLib - Tu Biblioteca de Programacion. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Politica de Privacidad</a> |
+                <a href="#">Terminos y Condiciones</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = ['7.jpg', '8.jpg'];
+            let currentIndex = 0;
+            const courseImage = document.getElementById('course-image');
+
+            function changeImage() {
+                currentIndex = (currentIndex + 1) % images.length;
+                courseImage.src = images[currentIndex];
+            }
+
+            setInterval(changeImage, 3000);
+        });
+    </script>
+</body>
+
+</html>

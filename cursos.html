@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Curso | CodeLib</title>
+    <link rel="stylesheet" href="Biblio.css">
+    <style>
+        body {
+            background-color: #1a1a1a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="navbar-wrapper">
+                <div class="navbar-left">
+                    <a href="index.html" class="logo">
+                        <span class="logo-code">CODE</span>
+                        <br>
+                        <span class="logo-lib">LIB</span>
+                    </a>
+                </div>
+                <nav class="navbar-center">
+                    <ul class="horizontal-menu">
+                        <li><a href="index.html" class="nav-item active">💡 Cursos</a></li>
+                        <li><a href="lenguajes.html" class="nav-item">💻 Lenguajes</a></li>
+                        <li><a href="libros.html" class="nav-item">📚 Libros</a></li>
+                        <li><a href="info.html" class="nav-item">ℹ️ Informacion</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-contenido">
+                <form action="#" method="get" class="buscador-form">
+                    <input type="text" id="campoBusqueda" placeholder="Buscar..." required>
+                    <button type="submit" class="btn-buscar">Buscar</button>
+                </form>
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <div class="nav-section">
+                <h3 class="nav-title">Navegacion</h3>
+                <ul class="vertical-menu">
+                    <li><a href="index.html" class="nav-link">⬅️ Volver a Cursos</a></li>
+                    <li><a href="#temario" class="nav-link">Temario</a></li>
+                    <li><a href="#horarios" class="nav-link">Horarios y Coste</a></li>
+                    <li><a href="#profesor" class="nav-link">Instructor</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="main">
+            <h1 class="main-title course-detail-title">Curso Completo de Python 🐍</h1>
+            <p class="section-description">Aprende a programar en Python desde cero hasta un nivel profesional, creando tus propias aplicaciones y scripts de automatizacion.</p>
+
+            <div class="course-details-grid">
+                <div class="detail-card">
+                    <h2 id="temario" class="detail-title">Temario Principal</h2>
+                    <ul>
+                        <li>Modulo 1: Fundamentos de Python y Estructuras de Datos.</li>
+                        <li>Modulo 2: Programacion Orientada a Objetos (POO).</li>
+                        <li>Modulo 3: Manipulacion de Archivos y Excepciones.</li>
+                        <li>Modulo 4: Introduccion al Desarrollo Web con Flask.</li>
+                        <li>Modulo 5: Bases de Datos y ORM.</li>
+                        <li>Modulo 6: Proyecto Final: Creacion de un CRUD API.</li>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <h2 id="horarios" class="detail-title">Horarios y Coste</h2>
+                    <p><strong>Modalidad:</strong> Online en Vivo (Streaming).</p>
+                    <p><strong>Duracion:</strong> 60 horas (10 semanas).</p>
+                    <p><strong>Costo Total:</strong> <span class="price-highlight">$59.99 USD</span> (Pago unico).</p>
+                    <p><strong>Proximo Inicio:</strong> Lunes 15 de Noviembre.</p>
+
+                    <h3 class="schedule-title">Horarios Disponibles:</h3>
+                    <table class="schedule-table">
+                        <tr>
+                            <th>Grupo</th>
+                            <th>Dias</th>
+                            <th>Hora (GMT-6)</th>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>Lunes y Miercoles</td>
+                            <td>19:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td>Sabados</td>
+                            <td>09:00 - 15:00</td>
+                        </tr>
+                    </table>
+                    <a href="#" class="btn-enroll">¡Inscribete Ahora!</a>
+                </div>
+
+                <div class="detail-card instructor-card">
+                    <h2 id="profesor" class="detail-title">El Instructor</h2>
+                    <p><strong>Nombre:</strong> Alan Turing Jr.</p>
+                    <p><strong>Especialidad:</strong> Ingeniero de Software con mas de 10 años de experiencia en automatizacion y desarrollo backend con Python.</p>
+                    <p><strong>Certificaciones:</strong> Python Institute Certified Developer (PCD).</p>
+                </div>
+
+                <div class="detail-card">
+                    <h2 class="detail-title">Requisitos</h2>
+                    <ul>
+                        <li>Conocimientos basicos de computacion.</li>
+                        <li>Computadora con conexion a internet estable.</li>
+                        <li>IDE o editor de codigo (VS Code recomendado).</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <h3 class="sidebar-title">Cursos Relacionados</h3>
+            <div class="sidebar-item">
+                <p>Analisis de Datos con Pandas.</p>
+                <a href="#" class="sidebar-link">Ver Curso</a>
+            </div>
+            <div class="sidebar-item">
+                <p>Bases de Datos con SQL para Programadores.</p>
+                <a href="#" class="sidebar-link">Ver Curso</a>
+            </div>
+        </aside>
+
+        <footer class="footer">
+            <p>&copy; 2025 CodeLib - Tu Biblioteca de Programacion.</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
