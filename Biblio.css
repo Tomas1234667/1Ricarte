@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    color: #f4f4f4;
-    background-color: #1A1A1A;
+    color: #e0e0e0;
+    background-color: #121E2C;
 }
 
 .grid-container {
@@ -16,7 +16,7 @@ body {
 
 .header {
     grid-area: header;
-    background-color: #000000;
+    background: linear-gradient(to right, #0A141F, #121E2C);
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -38,15 +38,15 @@ body {
 }
 
 .logo-code {
-    color: #00BFFF;
+    color: #4DD0E1;
     font-size: 40px;
-    text-shadow: 0 0 5px #00BFFF;
+    text-shadow: 0 0 8px rgba(77, 208, 225, 0.7);
 }
 
 .logo-lib {
-    color: #7F00FF;
+    color: #00A896;
     font-size: 30px;
-    text-shadow: 0 0 5px #7F00FF, 0 0 15px #7F00FF;
+    text-shadow: 0 0 8px rgba(0, 168, 150, 0.7), 0 0 20px rgba(0, 168, 150, 0.5);
 }
 
 .horizontal-menu {
@@ -60,7 +60,7 @@ body {
 
 .nav-item {
     text-decoration: none;
-    color: #7F00FF;
+    color: #00A896;
     padding: 5px;
     display: block;
     transition: all 0.3s ease;
@@ -70,7 +70,7 @@ body {
 }
 
 .nav-item:hover {
-    color: #00BFFF;
+    color: #4DD0E1;
     transform: translateY(-2px);
 }
 
@@ -81,24 +81,24 @@ body {
     left: 0;
     width: 100%;
     height: 3px;
-    background-color: #7F00FF;
+    background-color: #00A896;
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
 
 .nav-item:hover::after {
     transform: scaleX(1);
-    background-color: #00BFFF;
-    box-shadow: 0 0 5px #00BFFF;
+    background-color: #4DD0E1;
+    box-shadow: 0 0 8px #4DD0E1;
 }
 
 .nav-item.active {
-    color: #00BFFF;
+    color: #4DD0E1;
     font-weight: bold;
 }
 
 .nav-item.active::after {
-    background-color: #00BFFF;
+    background-color: #4DD0E1;
     transform: scaleX(1);
 }
 
@@ -110,7 +110,8 @@ body {
 .buscador-form {
     display: flex;
     width: 100%;
-    border: 1px solid #00BFFF;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, #4DD0E1, #00A896) 1;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -121,29 +122,29 @@ body {
     border: none;
     font-size: 14px;
     outline: none;
-    background-color: #333;
-    color: #f4f4f4;
+    background-color: #1F3044;
+    color: #e0e0e0;
 }
 
 .btn-buscar {
-    background-color: #7F00FF;
+    background: linear-gradient(to bottom, #00A896, #008f80);
     color: white;
     border: none;
     padding: 8px 15px;
     cursor: pointer;
     font-size: 14px;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
 }
 
 .btn-buscar:hover {
-    background-color: #00BFFF;
+    background: linear-gradient(to bottom, #4DD0E1, #3bbac9);
 }
 
 .navbar {
     grid-area: navbar;
-    background-color: #222;
+    background: linear-gradient(to bottom, #1A2735, #121E2C);
     padding: 20px 15px;
-    border-right: 1px solid #7F00FF;
+    border-right: 1px solid #00A896;
 }
 
 .nav-section {
@@ -151,8 +152,8 @@ body {
 }
 
 .nav-title {
-    color: #00BFFF;
-    border-bottom: 2px solid #7F00FF;
+    color: #4DD0E1;
+    border-bottom: 2px solid #00A896;
     padding-bottom: 5px;
     margin-top: 0;
     font-size: 18px;
@@ -170,41 +171,42 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #f4f4f4;
+    color: #e0e0e0;
     display: block;
-    padding: 5px 10px;
+    padding: 8px 12px;
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
 
 .nav-link:hover {
-    background-color: #7F00FF;
-    color: #000000;
+    background-color: #00A896;
+    color: #ffffff;
+    transform: translateX(5px);
 }
 
 .nav-link.active {
-    background-color: #00BFFF;
-    color: #000000;
+    background-color: #4DD0E1;
+    color: #121E2C;
     font-weight: bold;
 }
 
 .main {
     grid-area: main;
-    background-color: #1A1A1A;
+    background-color: #121E2C;
     padding: 20px 40px;
 }
 
 .main-title {
-    color: #00BFFF;
+    color: #4DD0E1;
     font-size: 28px;
-    border-bottom: 2px solid #7F00FF;
+    border-bottom: 2px solid #00A896;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
 .section-description {
     font-size: 16px;
-    color: #bbb;
+    color: #c0c0c0;
     margin-bottom: 30px;
 }
 
@@ -214,9 +216,10 @@ body {
     overflow: hidden;
     margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 191, 255, 0.4);
+    box-shadow: 0 0 20px rgba(77, 208, 225, 0.4), 0 0 10px rgba(0, 168, 150, 0.3);
     display: flex;
     align-items: center;
+    border: 1px solid rgba(77, 208, 225, 0.3);
 }
 
 .carousel-image {
@@ -233,48 +236,48 @@ body {
 }
 
 .course-card {
-    background-color: #333;
+    background: linear-gradient(to bottom right, #1A2735, #121E2C);
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid #7F00FF;
+    border: 1px solid #00A896;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .course-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(127, 0, 255, 0.4);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 168, 150, 0.5), 0 5px 15px rgba(77, 208, 225, 0.3);
 }
 
 .course-title {
-    color: #00BFFF;
-    font-size: 20px;
+    color: #4DD0E1;
+    font-size: 22px;
     margin-top: 0;
 }
 
 .course-info {
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 15px;
-    color: #ccc;
+    color: #b0b0b0;
 }
 
 .course-price {
     font-weight: bold;
-    color: #7F00FF;
+    color: #00A896;
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .sidebar {
     grid-area: sidebar;
-    background-color: #222;
+    background: linear-gradient(to bottom, #1A2735, #121E2C);
     padding: 20px 15px;
-    border-left: 1px solid #7F00FF;
-    color: #f4f4f4;
+    border-left: 1px solid #00A896;
+    color: #e0e0e0;
 }
 
 .sidebar-title {
-    color: #00BFFF;
-    border-bottom: 2px solid #7F00FF;
+    color: #4DD0E1;
+    border-bottom: 2px solid #00A896;
     padding-bottom: 5px;
     margin-top: 0;
     font-size: 18px;
@@ -283,12 +286,13 @@ body {
 .sidebar-item {
     margin-bottom: 20px;
     padding: 10px;
-    border: 1px dashed #3a3a3a;
+    border: 1px dashed rgba(77, 208, 225, 0.3);
     border-radius: 5px;
+    background-color: rgba(77, 208, 225, 0.05);
 }
 
 .sidebar-link {
-    color: #7F00FF;
+    color: #00A896;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
@@ -297,52 +301,54 @@ body {
 }
 
 .sidebar-link:hover {
-    color: #00BFFF;
+    color: #4DD0E1;
     text-decoration: underline;
 }
 
 .footer {
     grid-area: footer;
-    background-color: #000000;
-    color: #bbb;
+    background: linear-gradient(to right, #0A141F, #121E2C);
+    color: #c0c0c0;
     text-align: center;
     padding: 15px;
-    border-top: 1px solid #7F00FF;
+    border-top: 1px solid #00A896;
     font-size: 14px;
 }
 
 .footer-links a {
-    color: #00BFFF;
+    color: #4DD0E1;
     text-decoration: none;
     margin: 0 10px;
     transition: color 0.3s;
 }
 
 .footer-links a:hover {
-    color: #7F00FF;
+    color: #00A896;
     text-decoration: underline;
 }
 
 .btn-course-details {
-    background-color: #7F00FF;
+    background: linear-gradient(to right, #00A896, #4DD0E1);
     color: white;
-    padding: 10px 15px;
+    padding: 12px 18px;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
     margin-top: 10px;
     font-weight: bold;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: all 0.3s;
+    border: none;
 }
 
 .btn-course-details:hover {
-    background-color: #00BFFF;
-    box-shadow: 0 0 10px #00BFFF;
+    background: linear-gradient(to right, #4DD0E1, #00A896);
+    box-shadow: 0 0 15px rgba(77, 208, 225, 0.6);
 }
 
 .course-detail-title {
     font-size: 36px;
     margin-top: 0;
+    color: #4DD0E1;
 }
 
 .course-details-grid {
@@ -353,10 +359,10 @@ body {
 }
 
 .detail-card {
-    background-color: #333;
+    background: linear-gradient(to bottom, #1A2735, #1F3044);
     padding: 25px;
     border-radius: 10px;
-    border: 1px solid #7F00FF;
+    border: 1px solid #00A896;
 }
 
 .detail-card ul {
@@ -365,73 +371,75 @@ body {
 }
 
 .detail-card ul li {
-    background-color: #444;
-    padding: 10px;
-    margin-bottom: 8px;
-    border-left: 4px solid #00BFFF;
-    border-radius: 3px;
-    font-size: 15px;
+    background-color: #1F3044;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-left: 5px solid #4DD0E1;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #c0c0c0;
 }
 
 .detail-title {
-    color: #00BFFF;
+    color: #4DD0E1;
     font-size: 24px;
-    border-bottom: 1px solid #444;
-    padding-bottom: 5px;
+    border-bottom: 1px solid #1F3044;
+    padding-bottom: 8px;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .schedule-title {
-    color: #7F00FF;
+    color: #00A896;
     font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 12px;
 }
 
 .price-highlight {
-    font-size: 20px;
-    color: #7F00FF;
+    font-size: 22px;
+    color: #00A896;
     font-weight: bold;
 }
 
 .schedule-table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
-    font-size: 14px;
+    margin-bottom: 25px;
+    font-size: 15px;
 }
 
 .schedule-table th,
 .schedule-table td {
-    border: 1px solid #555;
-    padding: 8px;
+    border: 1px solid #2A3A4A;
+    padding: 10px;
     text-align: left;
 }
 
 .schedule-table th {
-    background-color: #444;
-    color: #00BFFF;
+    background-color: #1F3044;
+    color: #4DD0E1;
 }
 
 .btn-enroll {
     display: block;
     width: 100%;
     text-align: center;
-    background-color: #00BFFF;
+    background: linear-gradient(to right, #4DD0E1, #00A896);
     color: #000000;
-    padding: 15px 0;
+    padding: 18px 0;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
+    border-radius: 8px;
+    font-size: 20px;
     font-weight: bold;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: all 0.3s;
+    border: none;
 }
 
 .btn-enroll:hover {
-    background-color: #7F00FF;
-    color: #f4f4f4;
-    box-shadow: 0 0 15px #7F00FF;
+    background: linear-gradient(to right, #00A896, #4DD0E1);
+    color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 168, 150, 0.8);
 }
 
 .full-width {
@@ -490,7 +498,7 @@ body {
     }
     .navbar {
         border-right: none;
-        border-bottom: 1px solid #7F00FF;
+        border-bottom: 1px solid #00A896;
     }
     .vertical-menu {
         display: flex;
@@ -510,7 +518,7 @@ body {
     }
     .sidebar {
         border-left: none;
-        border-top: 1px solid #7F00FF;
+        border-top: 1px solid #00A896;
     }
     .course-details-grid {
         grid-template-columns: 1fr;
