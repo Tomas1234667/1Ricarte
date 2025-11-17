@@ -1,5 +1,7 @@
-<?php 
-session_start(); 
+<?php
+
+session_start();
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -12,7 +14,7 @@ session_start();
         body {
             background-color: #1a1a1a;
             display: flex;
-            flex-direction: column; 
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -25,7 +27,7 @@ session_start();
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             width: 350px;
-            margin-top: 10px; 
+            margin-top: 10px;
         }
         
         .registro-container h2 {
@@ -68,24 +70,24 @@ session_start();
         }
         
         .error-message {
-            background-color: #f44336; 
-            color: white; 
-            padding: 12px; 
+            background-color: #f44336;
+            color: white;
+            padding: 12px;
             margin-bottom: 20px;
             width: 350px;
-            border-radius: 5px; 
-            text-align: center; 
+            border-radius: 5px;
+            text-align: center;
             font-weight: bold;
         }
 
         .success-message {
-            background-color: #4CAF50; 
-            color: white; 
-            padding: 12px; 
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
             margin-bottom: 20px;
             width: 350px;
-            border-radius: 5px; 
-            text-align: center; 
+            border-radius: 5px;
+            text-align: center;
             font-weight: bold;
         }
     </style>

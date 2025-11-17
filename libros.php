@@ -1,6 +1,7 @@
 <?php
-require 'Database.php'; 
-session_start(); 
+
+require 'Database.php';
+session_start();
 
 $libros = [];
 $error_db = null;
@@ -10,9 +11,9 @@ try {
     $pdo = $db->getConnection();
 
     $stmt = $pdo->query("
-        SELECT 
-            l.id_libro, 
-            l.titulo, 
+        SELECT
+            l.id_libro,
+            l.titulo,
             l.precio,
             le.lenguaje,
             u.nombre_usuario
@@ -99,7 +100,7 @@ try {
                 <?php if (!empty($libros)): ?>
                     <?php foreach ($libros as $libro): ?>
                     <article class="course-card">
-                        <h2 class="course-title"><?php echo htmlspecialchars($libro['titulo']); ?> 📖</h2> 
+                        <h2 class="course-title"><?php echo htmlspecialchars($libro['titulo']); ?> 📖</h2>
                         
                         <p class="course-info">
                             <?php if ($libro['lenguaje']): ?>
@@ -110,8 +111,8 @@ try {
                             <?php endif; ?>
                         </p>
                         
-                        <p class="course-price">Costo: 
-                            <?php 
+                        <p class="course-price">Costo:
+                            <?php
                                 $precio = (float)$libro['precio'];
                                 if ($precio == 0.00) {
                                     echo "GRATIS";
@@ -129,7 +130,7 @@ try {
                     <p style="color: #ccc;">No se encontraron libros de programación disponibles en este momento.</p>
                     <?php endif; ?>
                 <?php endif; ?>
-                </div>
+            </div>
         </section>
 
         <aside class="sidebar">
@@ -140,7 +141,7 @@ try {
             </div>
             <div class="sidebar-item">
                 <p><strong>Libro del Mes:</strong> "Diseño de Algoritmos Eficientes". ¡Descarga gratuita!</p>
-                <a href="libros.php#gratis" class="sidebar-link">Descargar ahora</a> 
+                <a href="libros.php#gratis" class="sidebar-link">Descargar ahora</a>
             </div>
             <div class="sidebar-item">
                 <p>¿Necesitas ayuda? 💡 Consulta nuestra seccion de <a href="info.html#faq" class="sidebar-link">Preguntas Frecuentes</a>.</p>

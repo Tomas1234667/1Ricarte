@@ -1,6 +1,7 @@
 <?php
-require 'Database.php'; 
-session_start(); 
+
+require 'Database.php';
+session_start();
 
 $lenguajes = [];
 $error_db = null;
@@ -9,7 +10,6 @@ try {
     $db = Database::getInstance();
     $pdo = $db->getConnection();
     
-
     $stmt = $pdo->query("SELECT id_lenguaje, lenguaje FROM lenguaje ORDER BY id_lenguaje ASC");
     $lenguajes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -22,6 +22,7 @@ try {
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lenguajes de Programacion | CodeLib</title>
     <link rel="stylesheet" href="Biblio.css">
     <style>
@@ -41,7 +42,7 @@ try {
                 <nav class="navbar-center">
                     <ul class="horizontal-menu">
                         <li><a href="index.php" class="nav-item">💡 Cursos</a></li>
-                        <li><a href="lenguajes.php" class="nav-item active">💻 Lenguajes</a></li> 
+                        <li><a href="lenguajes.php" class="nav-item active">💻 Lenguajes</a></li>
                         <li><a href="libros.php" class="nav-item">📚 Libros</a></li>
                         <li><a href="info.php" class="nav-item">ℹ Informacion</a></li>
                     </ul>
@@ -89,7 +90,7 @@ try {
                 <?php if (!empty($lenguajes)): ?>
                     <?php foreach ($lenguajes as $lenguaje): ?>
                     <article class="course-card">
-                        <h2 class="course-title"><?php echo htmlspecialchars($lenguaje['lenguaje']); ?> 💻</h2> 
+                        <h2 class="course-title"><?php echo htmlspecialchars($lenguaje['lenguaje']); ?> 💻</h2>
                         
                         <p class="course-info">Tutoriales y guías para dominar este lenguaje de programación.</p>
                         
@@ -101,7 +102,7 @@ try {
                     <p style="color: #ccc;">No se encontraron lenguajes de programación en la base de datos.</p>
                     <?php endif; ?>
                 <?php endif; ?>
-                </div>
+            </div>
         </section>
 
         <aside class="sidebar">

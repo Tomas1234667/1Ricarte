@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informacion | CodeLib</title>
     <link rel="stylesheet" href="Biblio.css">
     <style>
@@ -24,7 +25,7 @@
                         <li><a href="index.php" class="nav-item">💡 Cursos</a></li>
                         <li><a href="lenguajes.php" class="nav-item">💻 Lenguajes</a></li>
                         <li><a href="libros.php" class="nav-item">📚 Libros</a></li>
-                        <li><a href="#" class="nav-item active">ℹ Informacion</a></li>
+                        <li><a href="info.php" class="nav-item active">ℹ Informacion</a></li>
                     </ul>
                 </nav>
             </div>
@@ -54,8 +55,7 @@
             <div class="course-details-grid">
                 <div class="detail-card" id="acerca">
                     <h2 class="detail-title">Acerca de CodeLib</h2>
-                    <p><strong>CodeLib</strong> nacio de la pasion por la enseñanza de la programacion. Nuestro objetivo es ser tu biblioteca digital de referencia, ofreciendo cursos de alta calidad y recursos descargables para que puedas avanzar en tu carrera
-                        profesional a tu propio ritmo.</p>
+                    <p><strong>CodeLib</strong> nacio de la pasion por la enseñanza de la programacion. Nuestro objetivo es ser tu biblioteca digital de referencia, ofreciendo cursos de alta calidad y recursos descargables para que puedas avanzar en tu carrera profesional a tu propio ritmo.</p>
                     <p>Creemos en el conocimiento accesible y en la practica constante para dominar el arte de la codificacion.</p>
                 </div>
 
@@ -63,7 +63,8 @@
                     <h2 class="detail-title">Contacto</h2>
                     <p>¿Tienes alguna pregunta, sugerencia o problema tecnico? Contactanos a traves de:</p>
                     <ul>
-                        <li><strong>Email:</strong> <a href="mailto:info@codelib.com" class="sidebar-link"></a>AzulRonquillo@codelib.com</a></li>
+                        <!-- Corregido: La estructura del enlace mailto estaba rota y se ha arreglado para que el correo sea clickable. -->
+                        <li><strong>Email:</strong> <a href="mailto:AzulRonquillo@codelib.com" class="sidebar-link">AzulRonquillo@codelib.com</a></li>
                         <li><strong>Telefono:</strong> +52 656 822-3750</li>
                         <li><strong>Direccion:</strong> Ciudad Juarez Avenida de las arecas</li>
                     </ul>

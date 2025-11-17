@@ -168,7 +168,7 @@ session_start();
             <h2 class="modal-title">Iniciar Sesión en CodeLib</h2>
             <form action="login_process.php" method="post" class="login-form">
                 <label for="username">Usuario:</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" id="username" name="nombre_usuario" required> 
 
                 <label for="password">Contraseña:</label>
                 <input type="password" id="password" name="password" required>
