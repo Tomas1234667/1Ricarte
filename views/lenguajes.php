@@ -1,6 +1,6 @@
 <?php
 
-require 'Database.php';
+require '../app/models/Database.php';
 session_start();
 
 $lenguajes = [];
@@ -24,7 +24,7 @@ try {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lenguajes de Programacion | CodeLib</title>
-    <link rel="stylesheet" href="Biblio.css">
+    <link rel="stylesheet" href="../public/Biblio.css">
     <style>
         body {
             background-color: #1a1a1a;
@@ -81,7 +81,7 @@ try {
             
             <?php if ($error_db): ?>
                 <div style="background-color: #d9534f; color: white; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
-                    🚨 **Error de Base de Datos:** <?php echo htmlspecialchars($error_db); ?>
+                     *Error de Base de Datos:* <?php echo htmlspecialchars($error_db); ?>
                 </div>
             <?php endif; ?>
 
@@ -109,14 +109,14 @@ try {
             <h3 class="sidebar-title">Novedades y Ofertas</h3>
             <div class="sidebar-item">
                 <p><strong>¡Nuevo Curso!</strong> 💻 Curso de Ciberseguridad Ofensiva. ¡20% de descuento por lanzamiento!</p>
-                <a href="cursos.html?id=ciberseguridad" class="sidebar-link">Mas informacion</a>
+                <a href="cursos.php?id=ciberseguridad" class="sidebar-link">Mas informacion</a>
             </div>
             <div class="sidebar-item">
                 <p><strong>Libro del Mes:</strong> "Diseño de Algoritmos Eficientes". ¡Descarga gratuita!</p>
-                <a href="libros.html#gratis" class="sidebar-link">Descargar ahora</a>
+                <a href="libros.php#gratis" class="sidebar-link">Descargar ahora</a>
             </div>
             <div class="sidebar-item">
-                <p>¿Necesitas ayuda? 💡 Consulta nuestra seccion de <a href="info.html#faq" class="sidebar-link">Preguntas Frecuentes</a>.</p>
+                <p>¿Necesitas ayuda? 💡 Consulta nuestra seccion de <a href="info.php#faq" class="sidebar-link">Preguntas Frecuentes</a>.</p>
             </div>
         </aside>
 

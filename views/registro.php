@@ -9,7 +9,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Registro de Usuario - CodeLib</title>
-    <link rel="stylesheet" href="Biblio.css">
+    <link rel="stylesheet" href="../public/Biblio.css">
     <style>
         body {
             background-color: #1a1a1a;
@@ -96,21 +96,21 @@ session_start();
 <body>
     <?php if (isset($_SESSION['error'])): ?>
         <div class="error-message">
-            🚨 ERROR: <?php echo htmlspecialchars($_SESSION['error']); ?>
+            ERROR: <?php echo htmlspecialchars($_SESSION['error']); ?>
         </div>
         <?php unset($_SESSION['error']); ?>
     <?php endif; ?>
 
     <?php if (isset($_SESSION['success'])): ?>
         <div class="success-message">
-            ✅ ÉXITO: <?php echo htmlspecialchars($_SESSION['success']); ?>
+            EXITO: <?php echo htmlspecialchars($_SESSION['success']); ?>
         </div>
         <?php unset($_SESSION['success']); ?>
     <?php endif; ?>
 
     <div class="registro-container">
         <h2>Crear Cuenta en CodeLib</h2>
-        <form action="registro_process.php" method="post" class="registro-form">
+        <form action="../app/controllers/registro_process.php" method="post" class="registro-form">
             <label for="new_username">Nombre de Usuario:</label>
             <input type="text" id="new_username" name="nombre_usuario" required>
 

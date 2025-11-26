@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informacion | CodeLib</title>
-    <link rel="stylesheet" href="Biblio.css">
+    <link rel="stylesheet" href="../public/Biblio.css">
     <style>
         body {
             background-color: #1a1a1a;
@@ -63,7 +63,6 @@
                     <h2 class="detail-title">Contacto</h2>
                     <p>¿Tienes alguna pregunta, sugerencia o problema tecnico? Contactanos a traves de:</p>
                     <ul>
-                        <!-- Corregido: La estructura del enlace mailto estaba rota y se ha arreglado para que el correo sea clickable. -->
                         <li><strong>Email:</strong> <a href="mailto:AzulRonquillo@codelib.com" class="sidebar-link">AzulRonquillo@codelib.com</a></li>
                         <li><strong>Telefono:</strong> +52 656 822-3750</li>
                         <li><strong>Direccion:</strong> Ciudad Juarez Avenida de las arecas</li>
@@ -85,14 +84,14 @@
             <h3 class="sidebar-title">Novedades y Ofertas</h3>
             <div class="sidebar-item">
                 <p><strong>¡Nuevo Curso!</strong> 💻 Curso de Ciberseguridad Ofensiva. ¡20% de descuento por lanzamiento!</p>
-                <a href="cursos.html?id=ciberseguridad" class="sidebar-link">Mas informacion</a>
+                <a href="cursos.php?id=ciberseguridad" class="sidebar-link">Mas informacion</a>
             </div>
             <div class="sidebar-item">
                 <p><strong>Libro del Mes:</strong> "Diseño de Algoritmos Eficientes". ¡Descarga gratuita!</p>
-                <a href="libros.html#gratis" class="sidebar-link">Descargar ahora</a>
+                <a href="libros.php#gratis" class="sidebar-link">Descargar ahora</a>
             </div>
             <div class="sidebar-item">
-                <p>¿Necesitas ayuda? 💡 Consulta nuestra seccion de <a href="info.html#faq" class="sidebar-link">Preguntas Frecuentes</a>.</p>
+                <p>¿Necesitas ayuda? 💡 Consulta nuestra seccion de <a href="info.php#faq" class="sidebar-link">Preguntas Frecuentes</a>.</p>
             </div>
         </aside>
 
